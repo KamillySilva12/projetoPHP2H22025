@@ -5,13 +5,20 @@ function titulo(){
 
 
 function somaValor($num1, $num2){
-	$resp = $num1 + $num2;
-	echo("A soma de $num1 com $num2 é: $resp");
+
+	return ($num1 + $num2);
 }
-$valor1 = 10; $valor2 = 10;
+
+$valor1 = 10; $valor2 = 20;
 
 //executar ou chamar função
 titulo();
-somaValor($valor1,$valor2);
+$resposta = somaValor($valor1, $valor2);
+echo("A soma de $valor1 e $valor2 é: $resposta");
+ 
+$somando = somaValor(30,40) + somaValor(50,60);
 
+echo ("<br /> $somando");
  ?>
+
+
