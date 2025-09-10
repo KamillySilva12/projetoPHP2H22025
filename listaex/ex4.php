@@ -3,7 +3,10 @@
  $num1 = 2;
  $num2 = 4;
  $num3 = 8;
+ $cont = 0;
 
-while
+while (cont < 3){
+	
+}
 
  ?>
