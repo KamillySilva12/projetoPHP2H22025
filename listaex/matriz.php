@@ -10,7 +10,7 @@ $emp = array
   for ($coluna=0;$coluna<3;$coluna++) {
     echo $emp[$linha][$coluna]." ";
   }
-  echo"<br/>"
+  echo"<br/>";
 }
 
 
