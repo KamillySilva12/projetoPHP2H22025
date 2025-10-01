@@ -1,5 +1,6 @@
 <?php 
     $soma1 = 0;
+    $soma2 = 0;
 
  	$matriz_a = array(
      array (25, 12, 35),
@@ -11,29 +12,37 @@
      array (5, 27, 8),
      array (74, 14, 3));
 
+echo("A MATRIZ A:");
+echo "<br/>";
+echo "<br/>";
     for ($linha=0;$linha<3;$linha++){
     for ($coluna=0;$coluna<3;$coluna++) {
 	echo $matriz_a[$linha][$coluna]." ";
-	$soma1 = $soma1 + $linha;
-	
+	$soma1 = $soma1 +  $matriz_a[$linha][$coluna];
 
  }
  echo "<br/>";
 
 }
+echo "<br/>";
+echo("A SOMA DA MATRIZ É: ".$soma1);
+echo "<br/>";
+echo "<br/>";
 
-echo($soma1);
-
-   echo "<br/>";
+   echo("A MATRIZ B:");
+echo "<br/>";
+echo "<br/>";
     for ($linha=0;$linha<3;$linha++){
     for ($coluna=0;$coluna<3;$coluna++) {
 	echo $matriz_b[$linha][$coluna]." ";
+	$soma2 = $soma2 +  $matriz_b[$linha][$coluna];
    
  }
  echo "<br/>";
 }
 
-
+echo "<br/>";
+echo("A SOMA DA MATRIZ É: ".$soma2);
 
 
 
