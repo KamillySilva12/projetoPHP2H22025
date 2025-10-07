@@ -1,32 +1,32 @@
 <?php 
-//criar um sistema em php que calcule as somas das matrizes
-$matriz_a = array(
-     array (25, 12, 35),
-     array (85, 47, 98),
-     array (32, 38, 105));
+// criar um sistema em php que calcule as somas das matrizes
+$matriz_a = [
+      [25, 12, 35],
+      [85, 47, 98],
+      [32, 38, 105]
+];
 
-$matriz_b = array(
-     array (98, 65, 35),
-     array (5, 27, 8),
-     array (74, 14, 3));
-$matriz_c = array(
-     array (),
-     array (),
-     array ());
+$matriz_b = [
+      [98, 65, 35],
+      [5, 27, 8],
+      [74, 14, 3]];
 
-for ($linha=0;$linha<3;$linha++) {
-for ($coluna=0;$coluna<3;$coluna++) {
-	echo $matriz_a[$linha][$coluna]." ";
-	echo $matriz_b[$linha][$coluna]." ";
-	 
-	 $soma = $soma + $matriz_a + $matriz_b;
+$matriz_c = [];
 
-	 echo ($soma);
-	 
-	
+for ($linha=0; $linha < 3; $linha++) { 
+     $matriz_c[$linha] = [];
 
-   }
-   echo"<br/>";
+     for ($coluna=0; $coluna < 3 ; $coluna++) { 
+          $matriz_c[$linha][$coluna] = $matriz_a[$linha][$coluna] + $matriz_b[$linha][$coluna];
+     }
+     
+}
+
+echo "RESULTADO: <br/>";
+
+foreach ($matriz_c as $resultado) {
+     echo " | " . implode(" | ", $resultado) . "| <br/> " ;
+
 }
 
  ?>
