@@ -15,10 +15,43 @@ $cadastro = [
 
 $contMasc = 0;
 
-echo"RESULTADO: <br/>"
+echo"RESULTADO: <br/>";
 
-// nomes e idades 
+// Nomes e idades 
+foreach ($cadastro as $pessoa) {
+	echo "- Nome: {$pessoa['nome']} e Idade: {$pessoa['idade']} <br/>";
+}
 
+echo"<br/>";
+
+// Tds em santos
+echo"PESSOAS QUE MORAM EM SANTOS: <br/>";
+foreach ($cadastro as $pessoa) {
+	if ($pessoa['cidade'] === 'Santos') {
+		echo "- Nome: {$pessoa['nome']} <br/>";
+	}
+}
+echo"<br/>";
+
+// Maiores de 18
+echo"PESSOAS MAIORES DE 18 ANOS: <br/>";
+foreach ($cadastro as $pessoa) {
+	if ($pessoa['idade'] >= 18) {
+		echo "- Nome: {$pessoa['nome']} <br/>";
+	}
+}
+
+// Contagem de homens
+
+foreach ($cadastro as $pessoa) {
+	if ($pessoa['sexo'] === 'M') {
+		$contMasc++;
+	}
+}
+
+echo"<br/>";
+
+echo"CONTAGEM DE HOMENS: $contMasc <br/>";
 
 
 
