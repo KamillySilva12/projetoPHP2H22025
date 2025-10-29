@@ -1,22 +1,39 @@
 <?php 
 
-	$nome = $_POST['nome'];
-	$email = $_POST['email'];
+if (isset($_POST['nenhum'])){
+	echo "Você escolheu nenhum";
+	echo "<br/>";
+} 
 
-	if ($nome === "Kamis" && $email === "Kamis@gmail.com") {
+if (isset($_POST['cachorro'])){
+	echo "Você escolheu cachorro";
+	echo "<br/>";
+}
 
-		echo "Cadastro certinho, fera!";
-		echo"<br/>";
-		echo "Seu nome é <strong> $nome </strong> seu email é $email";
-	}
-	else{
-		echo "<table>";
-		echo "<tr>";
-		echo "<td>";
-		echo "<b> Tudo errado </b>";
-		echo "</td>";
-		echo "</tr>";
-		echo "</table>";
-	}
+if (isset($_POST['gato'])){
+	echo "Você escolheu gato";
+	echo "<br/>";
+}
+
+if (isset($_POST['peixe'])){
+	echo "Você escolheu peixe";
+	echo "<br/>";
+} 
+
+if (isset($_POST['passaro'])){
+	echo "Você escolheu pássaro";
+	echo "<br/>";
+} 
+
+
+if (isset($_POST['estado_civil'])){
+	echo "Você está " . $_POST['estado_civil'];
+	echo "<br/>";
+
+}
+
+
+
+
 
  ?>
