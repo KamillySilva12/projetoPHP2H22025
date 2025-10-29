@@ -8,11 +8,13 @@
 	session_start();
 
 	if ($_SESSION["nome"] != "master"){
+
 		session_destroy();
 
 		header("Location:sessao_bloqueando.php");
 
 	}
+	?>
 
 </head>
 <body>
